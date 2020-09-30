@@ -18,10 +18,19 @@ def calculateSpan(price, n, S):
 					S[i] += 1
 					j -= 1
 						
+# A utility function to print elements of array 
+def printArray(arr, n): 
 
+	for i in range(n): 
+		print(arr[i], end = " ") 
+
+# Driver program to test above function	 
+price = [10, 4, 5, 90, 120, 80] 
+n = len(price) 
+S = [None] * n 
 
 # Fill the span values in list S[] 
 calculateSpan(price, n, S) 
 
 # print the calculated span values 
-printArray(S, n) 
+printArray(S, n)
